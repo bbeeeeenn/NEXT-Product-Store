@@ -20,7 +20,7 @@ export default function RootLayout({
             <header>
                <nav className="mb-5 flex h-16 items-center justify-between px-3 py-7 outline outline-1 outline-slate-600 sm:px-7 sm:py-10">
                   <Link href={"/"}>
-                     <h1 className="font bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
+                     <h1 className="bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
                         Product Store🛒
                      </h1>
                   </Link>
