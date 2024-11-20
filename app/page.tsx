@@ -30,7 +30,7 @@ export default function Home() {
 
    return (
       <>
-         <h1 className="font bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-center text-2xl font-extrabold text-transparent">
+         <h1 className="font m-auto w-min bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-2xl font-extrabold text-transparent">
             Products
          </h1>
          {fetching ? (

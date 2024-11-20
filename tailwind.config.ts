@@ -15,7 +15,7 @@ export default {
       },
    },
    plugins: [
-      function ({ addUtilities }) {
+      ({ addUtilities }) => {
          addUtilities({
             ".bg-clip-text": {
                "-webkit-background-clip": "text",

@@ -27,7 +27,7 @@ export default function RootLayout({
 
                   <div className="flex items-center justify-center gap-4 text-slate-200">
                      <CreateButton />
-                     <button className="aspect-square rounded-md bg-slate-800 p-1 sm:p-2">
+                     <button className="aspect-square rounded-md bg-slate-800 p-1 outline-2 transition-transform hover:outline hover:outline-blue-500 active:scale-95 sm:p-2">
                         <BiBrightness className="m-auto size-7" />
                      </button>
                   </div>
