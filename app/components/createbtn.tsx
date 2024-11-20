@@ -3,7 +3,7 @@ import React from "react";
 import { BiPlusCircle } from "react-icons/bi";
 import { useRouter } from "next/navigation";
 
-const createbtn = () => {
+const Createbtn = () => {
    const router = useRouter();
    const handleClick = () => {
       router.push("/create");
@@ -18,4 +18,4 @@ const createbtn = () => {
    );
 };
 
-export default createbtn;
+export default Createbtn;

@@ -3,12 +3,24 @@ import { BiEdit, BiTrash } from "react-icons/bi";
 import Image from "next/legacy/image";
 import React, { useState } from "react";
 
-const ProductCard = ({ id, name, price, imgSrc, setProducts }: any) => {
+const ProductCard = ({
+   id,
+   name,
+   price,
+   imgSrc,
+   setProducts,
+}: {
+   id: any;
+   name: string;
+   price: number;
+   imgSrc: string;
+   setProducts: any;
+}) => {
    const [deleting, setDeleting] = useState(false);
    const handleDelete = async () => {
       setDeleting(true);
       try {
-         const res = await fetch("/api/products/delete", {
+         await fetch("/api/products/delete", {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ id: id }),

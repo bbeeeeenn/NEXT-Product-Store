@@ -3,6 +3,6 @@ import dbConnect from "@/utils/mongodb";
 
 export async function GET() {
    await dbConnect();
-   let data = await ProductModel.find();
+   const data = await ProductModel.find();
    return Response.json(data);
 }

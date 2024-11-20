@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { BiBrightness, BiPlusCircle } from "react-icons/bi";
+import { BiBrightness } from "react-icons/bi";
 import Link from "next/link";
 import CreateButton from "@/app/components/createbtn";
 

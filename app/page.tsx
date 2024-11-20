@@ -3,8 +3,10 @@ import ProductCard from "@/app/components/productCard";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+type product = { _id: any; name: string; price: number; imgSrc: string };
+
 export default function Home() {
-   const [products, setProducts] = useState<any[]>([]);
+   const [products, setProducts] = useState<product[]>([]);
    const [filling, setFilling] = useState(false);
    const [fetching, setFetching] = useState(true);
    const fetchProducts = async () => {
@@ -57,7 +59,7 @@ export default function Home() {
          ) : (
             <div className="mt-5 grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
                {products
-                  .map((product: any) => (
+                  .map((product: product) => (
                      <ProductCard
                         key={product._id}
                         id={product._id.toString()}
