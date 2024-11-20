@@ -11,7 +11,7 @@ const createbtn = () => {
    return (
       <button
          onClick={handleClick}
-         className="aspect-square h-10 rounded-md bg-slate-800"
+         className="aspect-square rounded-md bg-slate-800 p-1 sm:p-2"
       >
          <BiPlusCircle className="m-auto size-7" />
       </button>

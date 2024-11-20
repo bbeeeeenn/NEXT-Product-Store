@@ -1,0 +1,32 @@
+[
+   {
+      "name": "Shoes",
+      "price": 100,
+      "imgSrc": "https://plus.unsplash.com/premium_photo-1663100769321-9eb8fe5a8e6b?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   },
+   {
+      "name": "Earphone",
+      "price": 50,
+      "imgSrc": "https://plus.unsplash.com/premium_photo-1668418188837-d40b734ed6d2?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   },
+   {
+      "name": "Jacket",
+      "price": 150,
+      "imgSrc": "https://images.unsplash.com/photo-1649433911119-7cf48b3e8f50?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   },
+   {
+      "name": "Robot",
+      "price": 10,
+      "imgSrc": "https://images.unsplash.com/photo-1527430253228-e93688616381?q=80&w=1634&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   },
+   {
+      "name": "Lotion",
+      "price": 20,
+      "imgSrc": "https://images.unsplash.com/photo-1526947425960-945c6e72858f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   },
+   {
+      "name": "Laptop",
+      "price": 20,
+      "imgSrc": "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   }
+]

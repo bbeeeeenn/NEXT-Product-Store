@@ -18,22 +18,22 @@ export default function RootLayout({
       <html lang="en">
          <body className="select-none bg-slate-900">
             <header>
-               <nav className="flex h-16 items-center justify-between px-14 py-10">
+               <nav className="mb-5 flex h-16 items-center justify-between px-3 py-7 outline outline-1 outline-slate-600 sm:px-7 sm:py-10">
                   <Link href={"/"}>
-                     <h1 className="font bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-3xl font-bold text-transparent">
+                     <h1 className="font bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
                         Product Store🛒
                      </h1>
                   </Link>
 
                   <div className="flex items-center justify-center gap-4 text-slate-200">
                      <CreateButton />
-                     <button className="aspect-square h-10 rounded-md bg-slate-800">
+                     <button className="aspect-square rounded-md bg-slate-800 p-1 sm:p-2">
                         <BiBrightness className="m-auto size-7" />
                      </button>
                   </div>
                </nav>
             </header>
-            <main className="px-20 pb-5 sm:px-10">{children}</main>
+            <main className="px-5 pb-5 sm:px-20">{children}</main>
          </body>
       </html>
    );
