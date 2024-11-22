@@ -51,10 +51,10 @@ const CreatePage = () => {
          <div className="mt-4 flex justify-center">
             <form
                onSubmit={handleSubmit}
-               className="w-full rounded-md bg-slate-800 p-5 sm:w-4/6 md:w-3/6"
+               className="bg-secondary w-full rounded-md p-5 shadow-lg sm:w-4/6 md:w-3/6"
             >
                <input
-                  className="my-2 block w-full cursor-pointer rounded-md bg-slate-500 px-5 py-2 font-bold text-blue-100 transition-transform focus:outline-none active:scale-y-90 active:opacity-90"
+                  className="bg-input text-textclr my-2 block w-full cursor-pointer rounded-md px-5 py-2 font-bold transition-transform focus:outline-none active:scale-y-90 active:opacity-90"
                   type="text"
                   required
                   autoComplete="off"
@@ -65,7 +65,7 @@ const CreatePage = () => {
                />
 
                <input
-                  className="my-2 block w-full cursor-pointer rounded-md bg-slate-500 px-5 py-2 font-bold text-blue-100 transition-transform focus:outline-none active:scale-y-90 active:opacity-90"
+                  className="bg-input text-textclr my-2 block w-full cursor-pointer rounded-md px-5 py-2 font-bold transition-transform focus:outline-none active:scale-y-90 active:opacity-90"
                   type="text"
                   required
                   autoComplete="off"
@@ -76,7 +76,7 @@ const CreatePage = () => {
                   onChange={handleChange}
                />
                <input
-                  className="my-2 block w-full cursor-pointer rounded-md bg-slate-500 px-5 py-2 font-bold text-blue-100 transition-transform focus:outline-none active:scale-y-90 active:opacity-90"
+                  className="bg-input text-textclr my-2 block w-full cursor-pointer rounded-md px-5 py-2 font-bold transition-transform focus:outline-none active:scale-y-90 active:opacity-90"
                   type="text"
                   autoComplete="off"
                   placeholder="Optional: Image URL"

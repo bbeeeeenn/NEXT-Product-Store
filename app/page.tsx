@@ -34,24 +34,24 @@ export default function Home() {
             Products
          </h1>
          {fetching ? (
-            <div className="absolute inset-0 m-auto aspect-square h-1 font-bold tracking-widest text-white">
+            <div className="text-textclr absolute inset-0 m-auto aspect-square h-1 font-bold tracking-widest">
                Loading...
             </div>
          ) : products.length == 0 ? (
             <div className="mt-20 flex flex-col items-center">
-               <p className="text-center font-bold tracking-widest text-white">
+               <p className="text-textclr text-center font-bold tracking-widest">
                   No Products Posted
                </p>
                <button
                   onClick={handleFillClick}
                   disabled={filling}
-                  className={`${filling ? "brightness-50" : ""} mx-2 mt-10 rounded-sm bg-emerald-400 px-2 font-bold transition-transform active:scale-95 sm:mt-5`}
+                  className={`${filling ? "brightness-75" : ""} mx-2 mt-10 rounded-md bg-emerald-400 px-5 py-1 font-bold transition-transform active:scale-95 sm:mt-5`}
                >
                   {filling ? "Waiting..." : "Auto Fill"}
                </button>
                <Link
                   href="/create"
-                  className="mx-2 mt-3 rounded-sm bg-blue-800 px-3 py-2 text-xl font-bold text-slate-200 transition-transform active:scale-95"
+                  className="mx-2 mt-3 rounded-md bg-blue-800 px-3 py-2 text-xl font-bold text-slate-200 transition-transform active:scale-95"
                >
                   Create New
                </Link>

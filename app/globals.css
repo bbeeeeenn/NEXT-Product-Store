@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+   transition: 0.3s;
+}
+
+body:not(:has(button.light), :has(button.dark)) {
+   display: none;
+}
+
+/* Light */
+body:has(button.light) {
+   --text-clr: 0, 0, 0;
+   --background-clr: 238, 247, 255;
+   --secondary-clr: 255, 255, 255;
+   --edit-btn-clr: 220, 228, 201;
+   --delete-btn-clr: 224, 123, 57;
+   --input-clr: 238, 247, 255;
+}
+
+/* Dark */
+body:has(button.dark) {
+   --text-clr: 226, 232, 240;
+   --background-clr: 15, 23, 42;
+   --secondary-clr: 30, 41, 59;
+   --edit-btn-clr: 59, 130, 246;
+   --delete-btn-clr: 249, 115, 22;
+   --input-clr: 100, 116, 139;
+}

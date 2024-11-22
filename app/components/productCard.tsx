@@ -33,7 +33,7 @@ const ProductCard = ({
       }
    };
    return (
-      <div className="h-auto overflow-hidden rounded-lg bg-slate-800 transition-transform duration-500 hover:-translate-y-1">
+      <div className="bg-secondary h-auto overflow-hidden rounded-lg shadow-lg transition-transform duration-500 hover:-translate-y-1">
          <div className="relative h-40 w-full">
             <Image
                src={
@@ -46,17 +46,17 @@ const ProductCard = ({
                priority={true}
             />
          </div>
-         <div className="flex flex-col gap-1 p-3 font-bold text-slate-300">
+         <div className="text-textclr flex flex-col gap-1 p-3 font-bold">
             <p>{name}</p>
             <p>${price}</p>
             <div className="text-black">
-               <button className="mr-2 cursor-pointer rounded-sm bg-blue-500 p-1 active:scale-95">
+               <button className="bg-edit mr-2 cursor-pointer rounded-sm p-1 active:scale-95">
                   <BiEdit className="size-6" />
                </button>
                <button
                   onClick={handleDelete}
                   disabled={deleting}
-                  className={`${deleting && "brightness-75"} rounded-sm bg-orange-500 p-1 transition-all active:scale-95`}
+                  className={`${deleting && "brightness-75"} bg-delete rounded-sm p-1 transition-all active:scale-95`}
                >
                   <BiTrash className="size-6" />
                </button>

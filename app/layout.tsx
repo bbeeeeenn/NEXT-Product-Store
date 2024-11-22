@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { BiBrightness } from "react-icons/bi";
 import Link from "next/link";
 import CreateButton from "@/app/components/createbtn";
+import ThemeButton from "./components/themebtn";
 
 export const metadata: Metadata = {
    title: "Product Store",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
    return (
       <html lang="en">
-         <body className="select-none bg-slate-900">
+         <body className="select-none bg-background">
             <header>
                <nav className="mb-5 flex h-16 items-center justify-between px-3 py-7 outline outline-1 outline-slate-600 sm:px-7 sm:py-10">
                   <Link href={"/"}>
@@ -25,11 +25,9 @@ export default function RootLayout({
                      </h1>
                   </Link>
 
-                  <div className="flex items-center justify-center gap-4 text-slate-200">
+                  <div className="text-textclr flex items-center justify-center gap-4">
                      <CreateButton />
-                     <button className="aspect-square rounded-md bg-slate-800 p-1 outline-2 transition-transform hover:outline hover:outline-blue-500 active:scale-95 sm:p-2">
-                        <BiBrightness className="m-auto size-7" />
-                     </button>
+                     <ThemeButton />
                   </div>
                </nav>
             </header>

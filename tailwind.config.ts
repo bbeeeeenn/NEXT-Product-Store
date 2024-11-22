@@ -9,8 +9,12 @@ export default {
    theme: {
       extend: {
          colors: {
-            background: "var(--background)",
-            foreground: "var(--foreground)",
+            textclr: "rgba(var(--text-clr))",
+            background: "rgba(var(--background-clr))",
+            secondary: "rgba(var(--secondary-clr))",
+            edit: "rgba(var(--edit-btn-clr))",
+            delete: "rgba(var(--delete-btn-clr))",
+            input: "rgba(var(--input-clr))",
          },
       },
    },
