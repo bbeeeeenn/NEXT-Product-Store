@@ -17,7 +17,7 @@ const EditDialog = ({
    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       setFetching(true);
-      const res = await fetch("/api/products/edit", {
+      await fetch("/api/products/edit", {
          method: "PUT",
          headers: {
             "Content-Type": "application/json",
