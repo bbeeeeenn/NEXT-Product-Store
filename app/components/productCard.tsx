@@ -9,15 +9,20 @@ const ProductCard = ({
    price,
    imgSrc,
    setProducts,
+   setEditing,
 }: {
    id: any;
    name: string;
    price: number;
    imgSrc: string;
    setProducts: any;
+   setEditing: any;
 }) => {
+   // States
    const [img, setImg] = useState(imgSrc);
    const [deleting, setDeleting] = useState(false);
+
+   // Functions
    const handleDelete = async () => {
       setDeleting(true);
       try {
@@ -32,6 +37,10 @@ const ProductCard = ({
       } catch (error) {
          console.log(error);
       }
+   };
+
+   const handleEdit = () => {
+      setEditing({ id, name, price, imgSrc });
    };
    return (
       <div className="h-auto overflow-hidden rounded-lg bg-secondary shadow-lg transition-transform duration-500 hover:-translate-y-1">
@@ -49,7 +58,10 @@ const ProductCard = ({
             <p>{name}</p>
             <p>${price}</p>
             <div className="text-black">
-               <button className="mr-2 cursor-pointer rounded-sm bg-edit p-1 active:scale-95">
+               <button
+                  onClick={handleEdit}
+                  className="mr-2 cursor-pointer rounded-sm bg-edit p-1 active:scale-95"
+               >
                   <BiEdit className="size-6" />
                </button>
                <button
