@@ -6,5 +6,6 @@ This is my first full-stack Next.js project, created as a learning exercise. It 
 
 ## Deployments
 
--  **Netlify:** [some-product-store.netlify.app](https://some-product-store.netlify.app/)
+<!-- -  **Netlify:** [some-product-store.netlify.app](https://some-product-store.netlify.app/) -->
+
 -  **Vercel:** [some-product-store.vercel.app](https://some-product-store.vercel.app/)
